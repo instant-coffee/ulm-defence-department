@@ -17,7 +17,9 @@ function App() {
   return (
     <>
       <h1>Mermaid Demo</h1>
-      <MermaidChart code={code}/>
+      <MermaidChart code={code} 
+      ariaLabel="Class diagram of Notifier, EmailNotifier, SMSNotifier"
+      className="w-full"/>
     </>
   )
 }

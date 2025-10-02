@@ -57,6 +57,7 @@ const MermaidChart: React.FC<MermaidChartProps> = ({
 
   // svg is trusted through Mermaid's sanitizer; still render via dangerouslySetInnerHTML.
   return (
+    <>
     <div
       className={className}
       role="img"
@@ -65,6 +66,9 @@ const MermaidChart: React.FC<MermaidChartProps> = ({
       style={{ maxWidth: "100%" }}
       dangerouslySetInnerHTML={{ __html: svg }}
     />
+    <p>Why Mermaid</p>
+    <p>It’s lightweight, TS-friendly, easy to theme, and great for class/sequence/state diagrams embedded in React apps.</p>
+    </>
   );
 };
 
